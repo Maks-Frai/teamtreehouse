@@ -78,20 +78,20 @@ header .profile-image:hover {
 
 
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #EAC7E1;
+  color: #084946;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 }
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: grey;
+  color: orange;
 }
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
+  padding: 20px 15px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
@@ -111,14 +111,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #26FF04;
   color: white;
-  padding: 5px 10px;
-  margin: 2px;
+  padding: 5px 20px;
+  margin: 10px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #AF03FF;
 }
 
 footer {
@@ -174,7 +174,7 @@ a.social:hover {
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex;
-      max-width: 1200px;
+      max-width: 1500px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
