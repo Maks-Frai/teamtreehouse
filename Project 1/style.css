@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #24CAEF;
 }
 a:hover {
   color: #6633ff;
@@ -76,6 +76,7 @@ header .profile-image:hover {
   transform: scale(1) rotate(5deg);
 }
 
+
 .experience {
   text-align: center;
   background: url('images/image-background.png') no-repeat top center ;
@@ -86,6 +87,13 @@ header .profile-image:hover {
 
 .experience {
   line-height: 1.5;
+}
+
+.contacts {
+  text-align: center;
+  background: #D5C942;
+  padding-top: 10px;
+  min-height: 140px;
 }
 
 .profile-image-2 {
@@ -132,6 +140,14 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #99FCFF;
+}
+
+table, th, td
+{
+border: 3px solid purple;
+border-collapse: collapse;
+table-layout: fixed;
+width: 100%;
 }
 
 ul.skills {
