@@ -1,99 +1,126 @@
-
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student's Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Student's Portfolio</title>
 </head>
-  <body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href=#>Portfolio</a></li>
-          <li><a href=#>Contact</a></li>
-        </ul>
-    </nav>
 
-    <header>
-      <div>
-        <img src="images/responsive-layout-profile.png" alt="Responsive layout profile">
-        <h1 class="tag name">Student Name</h1>
+<body>
+<header>
+
+    <div class="main-header">
+        <h1>Student Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#preview">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="preview">
+        <img src="./images/responsive-layout-profile.png" alt="Responsive layout profile">
         <p>Hi!, I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-      </div>
-    </header>
+    </section>
 
-    <main>
-      <section>
-          <h2>Portfolio</h2>
-          <div>
-              <div>
-                  <img src="images/portfolio-1.png" alt="Portfolio item 1">
-                  <h3>Marketing Page</h3>
-                  <p>
-                      This project shows the front page of a marketing website meant for a specific business I'm interested in.
-                  </p>
-              </div>
+</header>
 
-              <div>
-                  <img src="images/portfolio-2.png" alt="Portfolio item 2">
-                  <h3>Search Page</h3>
-                  <p>
-                      This project searches through a specific database to find information that the user is trying to look up.
-                  </p>
-              </div>
-
-              <div>
-                  <img src="images/portfolio-3.png" alt="Portfolio item 3">
-                  <h3>Travel App</h3>
-                  <p>
-                      This project compares travel times based on different transportation methods an tells you the best one.
-                  </p>
-              </div>
-
-              <div>
-                  <img src="images/portfolio-4.png" alt="Portfolio item 4">
-                  <h3>Map of Favorite Spots</h3>
-                  <p>
-                      This project uses mapping apis to plot points for my favorite sprts in the city for a do-it-yourself walking tour.
-                  </p>
-              </div>
-
-              <div>
-                  <img src="images/portfolio-5.png" alt="Portfolio item 5">
-                  <h3>Photo Gallery</h3>
-                  <p>
-                      This project shows pictures from a recent trip to the viewer and allows them to easly navigate through photos.
-                  </p>
-              </div>
-
-              <div>
-                  <img src="images/portfolio-6.png" alt="Portfolio item 6">
-                  <h3>Calculator</h3>
-                  <p>
-                      Someone can enterin the numbers they want, and press the big blue button and get the result.
-                  </p>
-              </div>
-          </div>
-      </section>
-    </main>
-    <footer>
-        <div>
-            <p>Student name</p>
-            <div>
-                <ul>
-                    <li><a href="#introduction">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+<main>
+    <section id="skills">
+        <h2 class="header-h2">Skills</h2>
+        <ul class="skills-list">
+            <li class="skill">HTML/CSS</li>
+            <li class="skill">JavaScript/jQuery</li>
+            <li class="skill">CSS Preprocessing</li>
+            <li class="skill">Version Control/Git</li>
+            <li class="skill">Responsive Design</li>
+            <li class="skill">Testing/Debugging</li>
+            <li class="skill">Browser Developer Tools</li>
+            <li class="skill">Building and Automation Tools/Web Performance</li>
+            <li class="skill">Command Line</li>
+        </ul>
+    </section>
+    <section id="portfolio">
+        <h2 class="header-h2">Portfolio</h2>
+        <div class="main-projects">
+            <div class="main-portfolio">
+                <img src="./images/portfolio-1.png" alt="Portfolio item 1">
+                <h3 class="items">Marketin Page</h3>
+                <p class="text-items">
+                    This project shows the front page of a marketing website meant for a specific business I'm interested in.
+                </p>
             </div>
-            <p><a href="#top">Back to top</a></p>
+
+            <div class="main-portfolio">
+                <img src="./images/portfolio-2.png" alt="Portfolio item 2">
+                <h3 class="items">Search Page</h3>
+                <p class="text-items">
+                    This project searches through a specific database to find information that the user is trying to look up.
+                </p>
+            </div>
+
+            <div class="main-portfolio">
+                <img src="./images/portfolio-3.png" alt="Portfolio item 3">
+                <h3 class="items">Travel App</h3>
+                <p class="text-items">
+                    This project compares travel times based on different transportation methods an tells you the best one.
+                </p>
+            </div>
+
+            <div class="main-portfolio">
+                <img src="./images/portfolio-4.png" alt="Portfolio item 4">
+                <h3 class="items">Map of Favorite Spots</h3>
+                <p class="text-items">
+                    This project uses mapping apis to plot points for my favorite sprts in the city for a do-it-yourself walking tour.
+                </p>
+            </div>
+
+            <div class="main-portfolio">
+                <img src="./images/portfolio-5.png" alt="Portfolio item 5">
+                <h3 class="items">Photo Gallery</h3>
+                <p class="text-items">
+                    This project shows pictures from a recent trip to the viewer and allows them to easly navigate through photos.
+                </p>
+            </div>
+
+            <div class="main-portfolio">
+                <img src="./images/portfolio-6.png" alt="Portfolio item 6">
+                <h3 class="items">Calculator</h3>
+                <p class="text-items">
+                    Someone can enterin the numbers they want, and press the big blue button and get the result.
+                </p>
+            </div>
         </div>
-    </footer>
-  </body>
-  </html>
+    </section>
+    <section id="contacts">
+        <h2 class="header-h2">Contact</h2>
+        <p class="contact-text">If you're interested in chatting or want more information  about what I've been working on, I'd love to hear from you!</p>
+        <p>Phone <b>+1 (111) 555-1234</b></p>
+        <p>Email <b>email@yoursite.com</b></p>
+    </section>
+</main>
+
+<footer>
+    <div class="main-footer">
+        <p class="name">Student name</p>
+        <div class="menu-footer">
+            <ul>
+                <li><a href="#preview">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+        <p class="back-to-top"><a href="#top">Back to top</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
