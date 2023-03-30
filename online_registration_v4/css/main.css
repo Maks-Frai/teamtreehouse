@@ -9,6 +9,10 @@ body {
     background: white;
 }
 
+form {
+  padding: 0 20px 0 20px;
+}
+
 h1 {
     color: white;
     font-size: 40px;
@@ -69,11 +73,15 @@ fieldset {
     background-color: lightgrey;
     border: 1px solid;
     display: block;
-    width: 70%;
+    width: 100%;
 }
 
 #zip {
   width: 20%;
+}
+
+.legends {
+  margin-bottom: 20px;
 }
 
 .label-comment {
