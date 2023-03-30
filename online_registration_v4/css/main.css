@@ -1,0 +1,195 @@
+/* Basic elements HTML */
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+body {
+    background: white;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    background: #2b3c4e;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h2, p, label, option, legend {
+  color: black;
+}
+
+main {
+  border-radius: 5%;
+}
+
+legend {
+ font-size: 1.4em;
+ font-weight: bold;
+ padding-top: 20px;
+}
+
+header {
+    text-align: center;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/* Basic elements HTML end */
+
+/* CSS for elemtens in main */
+
+.header-top {
+  text-align: center;
+  padding-bottom: 1.3em;
+}
+
+.for-h2 {
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.input-forms input,
+.input-forms select,
+.input-forms option {
+    padding: 5px;
+    background-color: lightgrey;
+    border: 1px solid;
+    display: block;
+    width: 70%;
+}
+
+#zip {
+  width: 20%;
+}
+
+.label-comment {
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+  }
+
+
+  :-moz-placeholder {
+    text-align: right;
+  }
+
+.textarea {
+      display: flex;
+      flex-direction: column;
+  }
+
+textarea {
+      flex: 1;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background-color: lightgrey;
+      border: solid 1px white;
+  }
+
+hr {
+    margin-bottom: 5px;
+    border: solid 3px #2d3945;
+}
+
+
+button {
+    background-color: #4ebbb5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-form {
+    margin-bottom: 20px;
+}
+
+.textarea {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 20px 20px 150px 20px;
+    text-align: center;
+}
+
+.paragrapgh-footer {
+  color: black;
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    transition: all 0.5s ease;
+    color: black;
+    background: lightgrey;
+}
+
+input,
+option,
+select {
+    font-size: 16px;
+    transition:all 0.5s ease;
+    color: #7d807a;
+}
+
+::placeholder {
+    color: #7d807a;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* CSS for elemtens in main end*/
+
+/* Media Queries */
+
+
+@media screen and (min-width: 768px) {
+  main {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .text-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    label {
+        width: 30%;
+        margin: auto 0;
+    }
+
+    .label-news {
+      margin-left: 10px;
+    }
+
+    legend {
+        margin-bottom: 20px;
+    }
+
+
+}
