@@ -1,203 +1,263 @@
-/* Basic elements HTML */
-* {
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    color: white;
-}
-
+* {box-sizing: border-box;}
+html {font-size: 18px;}
 body {
     background: white;
-}
-
-form {
-  padding: 0 20px 0 20px;
-}
-
-h1 {
-    color: white;
-    font-size: 40px;
-    padding: 20px;
-    background: #2b3c4e;
-    margin-top: 0;
-    margin-bottom: 1em;
-}
-
-h2, p, label, option, legend {
-  color: black;
-}
-
-main {
-  border-radius: 5%;
-}
-
-legend {
- font-size: 1.4em;
- font-weight: bold;
- padding-top: 20px;
+    font-family: 'Nunito', serif;
+    margin: 0px;
+    line-height: 150%;
 }
 
 header {
+    width: 100%;
+    background-color: #2d3945;
+    color: white;
     text-align: center;
-    border-radius: 0;
-    margin-top: 0;
+    padding: 1rem;
 }
 
-fieldset {
-    border: 0;
-    padding: 0;
-    margin: 0;
+label {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.wrapper {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 10px;
+    width: auto;
 }
 
 
-/* Basic elements HTML end */
-
-/* CSS for elemtens in main */
-
-.header-top {
-  text-align: center;
-  padding-bottom: 1.3em;
-}
-
-.for-h2 {
-  text-align: center;
-  padding: 0 20px 0 20px;
-}
-
-.input-forms input,
-.input-forms select,
-.input-forms option {
-    padding: 5px;
-    background-color: lightgrey;
-    border: 1px solid;
-    display: block;
-    width: 100%;
-}
-
-#zip {
-  width: 20%;
-}
-
-.legends {
-  margin-bottom: 20px;
-}
-
-.label-comment {
-  width: 100%;
-}
-
-::-webkit-input-placeholder {
-    text-align: right;
-  }
-
-
-  :-moz-placeholder {
-    text-align: right;
-  }
-
-.textarea {
-      display: flex;
-      flex-direction: column;
-  }
-
-textarea {
-      flex: 1;
-      padding-bottom: 50px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      background-color: lightgrey;
-      border: solid 1px white;
-  }
-
-hr {
-    margin-bottom: 5px;
-    border: solid 3px #2d3945;
-}
-
-
-button {
-    background-color: #4ebbb5;
-    color: white;
-    padding: 20px;
+h2 {
+    color: black;
     text-align: center;
-    width: 100%;
-    border: 0;
-    font-size: 20px;
     font-weight: bold;
 }
 
-.text-form {
-    margin-bottom: 20px;
+h3 {
+    color: black;
+    font-weight: bold;
 }
 
-.textarea {
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-
-footer {
-    margin: 0;
-    padding: 20px 20px 150px 20px;
+p {
+    color: darkgray;
     text-align: center;
 }
 
-.paragrapgh-footer {
-  color: black;
-  font-style: italic;
+fieldset {
+    max-width: auto;
+    border: none;
+    padding: 0 18px 0 18px;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    transition: all 0.5s ease;
-    color: black;
-    background: lightgrey;
+.main-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-input,
-option,
-select {
+.label-form {
     font-size: 16px;
-    transition:all 0.5s ease;
-    color: #7d807a;
+    color: grey;
+}
+
+.input-form {
+    background-color: #ebf0f5;
+    padding: 1rem;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+}
+
+.input-form:focus,
+.form-zip:focus,
+.select-form:focus,
+.text-topic:focus {
+  outline: 3px solid rgb(104, 68, 231);
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.input-form:hover,
+.form-zip:hover,
+.select-form:hover,
+.text-topic:hover {
+    outline: 3px solid #796da1;
+    background-color: #f5d584;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.form-zip {
+    background-color: #ebf0f5;
+    padding: 0.7rem;
+    border-radius: 2px;
+    border: none;
+    width: 50%;
+    display: block;
+}
+
+.label-news {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: grey;
+}
+
+.check-box {
+    background-color: #ebf0f5;
+    padding: 1rem;
+}
+
+.select-form {
+    display: flex;
+    background-color: #ebf0f5;
+    padding: 1rem;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+}
+
+select#state.select-form {
+ color: black;
+ font-size: 14px;
 }
 
 ::placeholder {
-    color: #7d807a;
-    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+}
+
+.checkbox-area {
+    display: inline;
+}
+
+.text-topic {
+    background-color: #eff0f1;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+}
+
+.text-topic:focus {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.text-topic:hover {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.select-form:focus {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.select-form:hover {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.submit-button {
+    background-color: #4ebbb5;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 2px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #706c6c;
+
+}
+
+.first-hr {
+    border-top: 5px solid black;
+    padding-top: 4px;
+    border-bottom: 3px solid black;
+    border-right: none;
+    border-left: none;
+    margin: 1rem;
+}
+
+.second-hr {
+    border-top: 2px solid black;
+    margin: 1rem;
+}
+
+footer {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0 200px 0;
+}
+
+footer p {
+    color: grey;
     font-style: italic;
 }
 
-/* CSS for elemtens in main end*/
+@media only screen and (min-width: 768px) {
+.wrapper {
+    width: 100%;
+    flex-basis: auto;
+    align-items: center;
+}
 
-/* Media Queries */
+main {
+    width: 768px;
+}
 
+.main-form {
+    -ms-flex-align: start;
+}
 
-@media screen and (min-width: 768px) {
-  main {
-        max-width: 768px;
-        margin: 0 auto;
-    }
+fieldset {
+    margin: 0px;
+    width: 100%;
+    max-width: none;
+}
 
-    .text-form {
-        display: flex;
-        flex-direction: row;
-    }
+.select-form {
+    display: flex;
+    width: 75%;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
 
-    label {
-        width: 30%;
-        margin: auto 0;
-    }
+.input-form {
+    display: flex;
+    width: 75%;
+}
 
-    .label-news {
-      margin-left: 10px;
-    }
+.form-zip {
+    width: 25%;
+}
 
-    legend {
-        margin-bottom: 20px;
-    }
+.label-form {
+    display: flex;
+    width: 25%;
+}
 
+.text-form {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
 
 }
