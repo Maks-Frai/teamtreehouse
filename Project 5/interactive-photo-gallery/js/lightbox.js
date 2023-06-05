@@ -1,16 +1,3 @@
-/*!
- * Lightbox v2.11.1
- * by Lokesh Dhakar
- *
- * More info:
- * http://lokeshdhakar.com/projects/lightbox2/
- *
- * Copyright Lokesh Dhakar
- * Released under the MIT license
- * https://github.com/lokesh/lightbox2/blob/master/LICENSE
- *
- * @preserve
- */
 
 // Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
@@ -38,8 +25,7 @@
     this.option(options);
   }
 
-  // Descriptions of all options available on the demo site:
-  // http://lokeshdhakar.com/projects/lightbox2/index.html#options
+
   Lightbox.defaults = {
     albumLabel: 'Image %1 of %2',
     alwaysShowNavOnTouchDevices: false,
@@ -53,14 +39,7 @@
     showImageNumberLabel: true,
     wrapAround: false,
     disableScrolling: false,
-    /*
-    Sanitize Title
-    If the caption data is trusted, for example you are hardcoding it in, then leave this to false.
-    This will free you to add html tags, such as links, in the caption.
 
-    If the caption data is user submitted or from some other untrusted source, then set this to true
-    to prevent xss and other injection attacks.
-     */
     sanitizeTitle: false
   };
 
@@ -100,17 +79,7 @@
 
     var self = this;
 
-    // The two root notes generated, #lightboxOverlay and #lightbox are given
-    // tabindex attrs so they are focusable. We attach our keyboard event
-    // listeners to these two elements, and not the document. Clicking anywhere
-    // while Lightbox is opened will keep the focus on or inside one of these
-    // two elements.
-    //
-    // We do this so we can prevent propogation of the Esc keypress when
-    // Lightbox is open. This prevents it from intefering with other components
-    // on the page below.
-    //
-    // Github issue: https://github.com/lokesh/lightbox2/issues/663
+
     $('<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div><div id="lightbox" tabindex="-1" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href="" ></a><a class="lb-next" aria-label="Next image" href="" ></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>').appendTo($('body'));
 
     // Cache jQuery objects
@@ -173,19 +142,6 @@
       return false;
     });
 
-    /*
-      Show context menu for image on right-click
-
-      There is a div containing the navigation that spans the entire image and lives above of it. If
-      you right-click, you are right clicking this div and not the image. This prevents users from
-      saving the image or using other context menu actions with the image.
-
-      To fix this, when we detect the right mouse button is pressed down, but not yet clicked, we
-      set pointer-events to none on the nav div. This is so that the upcoming right-click event on
-      the next mouseup will bubble down to the image. Once the right-click/contextmenu event occurs
-      we set the pointer events back to auto for the nav div so it can capture hover and left-click
-      events as usual.
-     */
     this.$nav.on('mousedown', function(event) {
       if (event.which === 3) {
         self.$nav.css('pointer-events', 'none');
@@ -308,18 +264,9 @@
       windowWidth = $(window).width();
       windowHeight = $(window).height();
 
-      // Calculate the max image dimensions for the current viewport.
-      // Take into account the border around the image and an additional 10px gutter on each side.
       maxImageWidth  = windowWidth - self.containerPadding.left - self.containerPadding.right - self.imageBorderWidth.left - self.imageBorderWidth.right - 20;
       maxImageHeight = windowHeight - self.containerPadding.top - self.containerPadding.bottom - self.imageBorderWidth.top - self.imageBorderWidth.bottom - self.options.positionFromTop - 70;
 
-      /*
-      SVGs that don't have width and height attributes specified are reporting width and height
-      values of 0 in Firefox 47 and IE11 on Windows. To fix, we set the width and height to the max
-      dimensions for the viewport rather than 0 x 0.
-
-      https://github.com/lokesh/lightbox2/issues/552
-      */
 
       if (filetype === 'svg') {
         if ((preloader.width === 0) || preloader.height === 0) {
@@ -469,8 +416,6 @@
   Lightbox.prototype.updateDetails = function() {
     var self = this;
 
-    // Enable anchor clicks in the injected caption html.
-    // Thanks Nate Wright for the fix. @https://github.com/NateWr
     if (typeof this.album[this.currentImageIndex].title !== 'undefined' &&
       this.album[this.currentImageIndex].title !== '') {
       var $caption = this.$lightbox.find('.lb-caption');
