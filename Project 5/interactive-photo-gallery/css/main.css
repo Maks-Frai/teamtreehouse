@@ -13,7 +13,7 @@ input[id="search"]{
     margin-bottom: 30px;
     outline: none;
 }
-.images-container{
+.gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     max-width: 850px;
